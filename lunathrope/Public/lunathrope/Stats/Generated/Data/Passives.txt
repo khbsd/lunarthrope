@@ -1,0 +1,13 @@
+new entry "KHB_LunarFlame_Unlock"
+type "PassiveData"
+data "Icon" "Spell_Evocation_SacredFlame"
+data "DisplayName" "h2515b5a7g92a0g40e7g9b1bg245c322d13d5;1"
+data "Description" "h75ab1b63ge88dg4c53gb30fg3c6a9a790a00;2"
+data "Boosts" "UnlockSpell(KHB_Target_LunarFlame)" 
+
+new entry "KHB_SelunesGrace_Unlock"
+type "PassiveData"
+data "Icon" "Spell_Evocation_Moonbeam"
+data "DisplayName" "h2515b5a7g92a0g40e7g9b1bg245c322d13d5;1"
+data "Description" "h75ab1b63ge88dg4c53gb30fg3c6a9a790a00;2"
+data "Boosts" "UnlockSpell(KHB_Shout_SelunesGrace)"

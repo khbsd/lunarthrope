@@ -1,7 +1,7 @@
 
 {
     "RequiredVersion": 4,
-    "ModTable": "lunathrope",
+    "ModTable": "Lycanite",
     "FeatureFlags": ["Lua"]
 }
                     

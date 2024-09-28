@@ -1,18 +1,15 @@
-new entry "KGB_SELUNESGRACE_AURA"
+new entry "KHB_SELUNESGRACE_AURA"
 type "StatusData"
 data "StatusType" "BOOST"
-// Moonbeam
-data "DisplayName" "h884e9694g454dg4b19g9341g0351dcfffad0;2"
-// Ghostly flames engulf any creature that enters this silvery light or starts its turn inside the light. They deal [1]. On a successful save, targets still take half damage.
-data "Description" "h444939b4g734eg4c9cg8fd8g8170a0f37e9c;4"
-data "DescriptionParams" "DealDamage(LevelMapValue(MartialArts),Radiant)"
-data "Icon" "Spell_Evocation_Moonbeam"
-data "StackId" "MOONBEAM_AURA"
-data "AuraRadius" "1"
-data "AuraStatuses" "TARGET:IF(Character() and not Dead()):ApplyStatus(KHB_SELUNESGRACE,100,-1)"
-data "Boosts" "GameplayLight(2,false,0.1)"
-data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;InitiateCombat;BringIntoCombat"
-data "StatusEffect" "dd02e9e1-8ab7-4da0-9097-26fd886c06d4"
+// Healing Radiance
+data "DisplayName" "hd545e2f3g7d65g45ceg8e98g644247ca9ca2;1"
+// Affected paladin is calling upon the powers of nature. The paladin and its allies within [2] will regain [1] at the start of the paladin's next turn.
+data "Description" "heea9b291g431dg4608g8c6dgdf159e2b35e7;3"
+data "DescriptionParams" "IF(Ally()):RegainHitPoints(LevelMapValue(MartialArts));Distance(3)"
+data "Icon" "Action_Paladin_HealingRadiance"
+data "StackId" "HEALING_RADIANCE"
+data "TickType" "StartTurn"
+data "StatusGroups" "SG_RemoveOnRespec"
 
 
 new entry "KHB_SELUNESGRACE"
@@ -32,7 +29,7 @@ data "TickType" "StartTurn"
 data "StatusPropertyFlags" "InitiateCombat;BringIntoCombat"
 data "OnApplyRoll" "not SavingThrow(Ability.Constitution,CalculateSpellDC(context.PreferredCastingAbility, GetSummoner(context.Source)))"
 data "OnApplySuccess" "IF(Enemy()):DealDamage(LevelMapValue(MartialArts), Radiant,Magical); IF(Enemy()):ApplyStatus(KHB_SELUNESGRACE,100,1);IF(Ally()):RegainHitPoints(LevelMapValue(MartialArts))"
-data "OnApplyFail" "DealDamage(LevelMapValue(MartialArts) / 2,Radiant,Magical);IF(Ally()):RegainHitPoints(LevelMapValue(MartialArts))"
+data "OnApplyFail" "IF(Enemy()):DealDamage(LevelMapValue(MartialArts) / 2,Radiant,Magical);IF(Ally()):RegainHitPoints(LevelMapValue(MartialArts) / 2)"
 data "OnTickRoll" "not SavingThrow(Ability.Constitution,CalculateSpellDC(context.PreferredCastingAbility, GetSummoner(context.Source)))"
 data "OnTickSuccess" "IF(Enemy()):DealDamage(LevelMapValue(MartialArts), Radiant,Magical); IF(Enemy()):ApplyStatus(KHB_SELUNESGRACE,100,1);IF(Ally()):RegainHitPoints(LevelMapValue(MartialArts))"
 data "OnTickFail" "DealDamage(2d10/2,Radiant,Magical);IF(Ally()):RegainHitPoints(LevelMapValue(MartialArts))"

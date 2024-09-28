@@ -5,11 +5,11 @@
         <node id="root">
             <children>
                 <node id="ProgressionDescription">
-                    <attribute id="Description" type="TranslatedString" handle="KHB_wayOfLycanite" version="1"/>
-                    <attribute id="DisplayName" type="TranslatedString" handle="KHB_wayOfLycanite" version="1"/>
+                    <attribute id="Description" type="TranslatedString" handle="KHB_wayOfLycaniteDisplayName" version="1"/>
+                    <attribute id="DisplayName" type="TranslatedString" handle="KHB_wayOfLycaniteDescription" version="1"/>
                     <attribute id="ExactMatch" type="FixedString" value="Lycanite"/>
                     <attribute id="ProgressionTableId" type="guid" value="4d2bf387-275b-43fb-a5ad-3f764fdab9d8"/>
-                    <attribute id="UUID" type="guid" value="9a7db5ca-daa4-46b2-956c-a4f3a81db093"/>
+                    <attribute id="UUID" type="guid" value="465e852b-cc96-477c-b3a6-f160334ee9c4"/>
                 </node>
             </children>
         </node>

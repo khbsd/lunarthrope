@@ -1,0 +1,14 @@
+// 51ac91a2-c6b4-0237-528a-a9eb0e9d07f2
+
+new entry "SELUNESGACE_AURA_VFX"
+type "StatusData"
+data "StatusType" "EFFECT"
+// %%% Karlach Rage Falmes VFX|
+data "DisplayName" "h19da6af0g74feg4602g8ad5ga23dd92bf4a0;1"
+data "SoundStart" "Karlach_Rage_Fire"
+data "SoundStop" "Karlach_Rage_Fire_Stop"
+data "StackId" "ORI_KARLACH_RAGE_FIRE_VFX"
+data "RemoveConditions" "not HasStatus('SG_Rage')"
+data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator"
+// data "StatusEffect" "393ae64d-5014-4614-b25c-82ff744c0f31"
+data "StatusEffect" "51ac91a2-c6b4-0237-528a-a9eb0e9d07f2"

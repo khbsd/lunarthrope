@@ -1,5 +1,7 @@
+mod uuid: 29d0c98d-6723-45a5-88ee-1f7ed0a9c8d7
 subclass uuid: aa93c7a9-e504-4cd1-83b5-ebd80cb4ac7a
-progression table uuid: 4d2bf387-275b-43fb-a5ad-3f764fdab9d8
+ProgressionTableId: 4d2bf387-275b-43fb-a5ad-3f764fdab9d8
+ProgressionDescriptions.lsx uuid: 465e852b-cc96-477c-b3a6-f160334ee9c4
 
 level 3 progression uuid: 281c2fe8-c96a-4696-9276-a48c148e1321
 level 6 progression uuid: 85f05fb6-4f88-48eb-8efa-4e2cd6dbd098

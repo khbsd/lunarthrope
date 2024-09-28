@@ -62,8 +62,8 @@
                 <node id="Progression">
                     <attribute id="Level" type="uint8" value="3"/>
                     <attribute id="Name" type="LSString" value="Lycanite"/>
-                    <attribute id="PassivesRemoved" type="LSString" value="UnarmoredDefense_Monk;MartialArts_DextrousUnarmedAttacks"/>
-                    <attribute id="PassivesAdded" type="LSString" value=""/>
+                    <attribute id="PassivesRemoved" type="LSString" value=""/>
+                    <attribute id="PassivesAdded" type="LSString" value="KHB_LunarFlame_Unlock;KHB_SelunesGrace_Unlock"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/>
                     <attribute id="TableUUID" type="guid" value="4d2bf387-275b-43fb-a5ad-3f764fdab9d8"/>
                     <attribute id="UUID" type="guid" value="281c2fe8-c96a-4696-9276-a48c148e1321"/>
